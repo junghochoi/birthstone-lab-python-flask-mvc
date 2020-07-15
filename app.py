@@ -22,7 +22,10 @@ def results():
         print(request.form)
         month = request.form["month"].strip().lower()
         gemstone = model.birthstones[month]
-        return render_template('results.html', month=month, gemstone=gemstone)
+        blood_type = request.form["blood-type"]
+        description = model.blood_type[blood_type]
+        # print(blood_type)
+        return render_template('results.html', month=month, gemstone=gemstone, blood_type=blood_type, description=description)
     else:
         return "You have to use a post method"
 
