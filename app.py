@@ -20,8 +20,9 @@ def index():
 def results():
     if request.method == "POST":
         print(request.form)
-        month = request.form["month"]
-        return render_template('results.html', month=month)
+        month = request.form["month"].strip().lower()
+        gemstone = model.birthstones[month]
+        return render_template('results.html', month=month, gemstone=gemstone)
     else:
         return "You have to use a post method"
 
