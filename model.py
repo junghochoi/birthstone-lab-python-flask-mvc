@@ -36,7 +36,7 @@ blood_type = {
     They are generous, kind-hearted and loving. They adapt well with changes. 
     They are resilient and flexible and can do better than other blood types in tough situations.
     Positive personalities traits: Leadership, easy going, positive outlook, 
-    confident, calm, outgoing, cautious, loyal, peaceful, passionate, independent, reliable, carefree, trendsetter and devoted""",
+    confident, calm, outgoing, cautious, loyal, peaceful, passionate, independent, reliable, carefree, trendsetter and devoted.""",
 
     "B": """These people are very creative and quick decision makers. 
     But they are not good at taking orders. They put every part of themselves into something they want to focus on.

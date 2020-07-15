@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +10,43 @@
   <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap');
+    body {
+        background-image: linear-gradient(to right, #33ccff, #99ff99);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: 'Rokkitt', serif;
+        text-align: center;
+        font-size: 120%;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    img {
+        height: 600px;
+        border: 5px dotted white;
+    }
+    
+    div {
+        width: 500px;
+        border: 10px solid #ccffff;
+        border-radius: 100px;
+        padding: 50px;
+        margin: 20px;
+    }
+    </style>
 </head>
 
 <body>
-    <h2>Your gemstone is {{ gemstone }}</h2>
-    <p>This is what's typical of a person with {{blood_type}}:</p>
-    <p>Here's a description: {{ description }}</p>
+    <div>
+        <h2>Your gemstone is {{ gemstone }}!!!</h2>
+        <p>This is what's typical of a person with {{blood_type}}:</p>
+        <p>{{ description }}</p>
+    </div>
+    <img src="https://images-na.ssl-images-amazon.com/images/I/71-oafo9hcL._AC_SL1001_.jpg" alt="gemstone chart" />
 </body>
 
 </html>
